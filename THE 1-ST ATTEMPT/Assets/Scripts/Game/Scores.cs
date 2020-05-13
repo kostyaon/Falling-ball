@@ -25,7 +25,6 @@ public class Scores : MonoBehaviour
     private static int score;
     private Animator bgWhite_anim;
     private Player player;
-    private Basket basket;
     public float speed
     {
         get
@@ -54,7 +53,6 @@ public class Scores : MonoBehaviour
         cl_1 = (new GameObject("Clone_class").AddComponent<Clone>());
         bgWhite_anim = bgWhite.GetComponent<Animator>();
         player = gameObject.AddComponent<Player>();
-        basket = gameObject.AddComponent<Basket>();
         player.Load();
         moneyCloud.text = player.money.ToString();
     }
@@ -78,7 +76,7 @@ public class Scores : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         FindObjectOfType<AudioManager>().Play("Health");
-        basket.checker = true;
+        cl_1.check = true;
         score += 2;
         if (transform.position.y < -1.7f)
         {

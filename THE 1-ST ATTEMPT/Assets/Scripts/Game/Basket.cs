@@ -12,17 +12,10 @@ public class Basket : MonoBehaviour
             return rb;
         }
     }
-    public bool checker
-    {
-        set
-        {
-            this.check = value;
-        }
-    }
     private Rigidbody2D rb;
     private float value;
     private GameObject ball;
-    private bool check;
+
     private void Awake()
     {
         ball = GameObject.FindGameObjectWithTag("Player");
@@ -33,7 +26,6 @@ public class Basket : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(0, obj.speed);
         FindObjectOfType<ParticleSystem>().Stop();
-        this.check = false;
     }
 
     void Update()
@@ -45,10 +37,11 @@ public class Basket : MonoBehaviour
             Destroy(this.gameObject);
         }
         
-        if (value < -0.89f && value > -0.934f && this.check == false)
+        if (value < -0.89f && value > -0.934f && obj.objCheck == false)
         {
             obj.checkHealth(Scores.health);
         }
 
     }
+
 }

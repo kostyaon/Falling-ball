@@ -7,7 +7,7 @@ using System.Collections;
 public class MainMenu : MonoBehaviour
 {
 	public Button SettingBut, MoneyBut;
-	public GameObject bg, ball, swipes, leftSide, rightSide, plane, record, bgWhite;
+	public GameObject bg, ball, swipes, leftSide, rightSide, plane, record, bgWhite, settingsMenu;
 	public ParticleSystem speedEf, stars;
 	public Text hs, score, money;
 	private Rigidbody2D rb;
@@ -15,6 +15,9 @@ public class MainMenu : MonoBehaviour
 	private Touch theTouch;
 	private Vector2 startTouchPosition, endTouchPosition;
 	private Player player;
+
+	public Button close;
+
 
 
 	private void Awake()
@@ -26,6 +29,7 @@ public class MainMenu : MonoBehaviour
 	{
 		SettingBut.onClick.AddListener(SetFun);
 		MoneyBut.onClick.AddListener(MoneyFun);
+		close.onClick.AddListener(CloseSet);
 		ball_anim = ball.GetComponent<Animator>();
 		left_anim = leftSide.GetComponent<Animator>();
 		right_anim = rightSide.GetComponent<Animator>();
@@ -38,7 +42,7 @@ public class MainMenu : MonoBehaviour
 		bgWhite_anim.enabled = true;
 		StartCoroutine(bgSound());
 	}
-
+	
 	private void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.Space)) GameStart();
@@ -73,10 +77,15 @@ public class MainMenu : MonoBehaviour
 			StartCoroutine(LoadLevel());
 		}
 	}
+	private void CloseSet()
+	{
+		FindObjectOfType<AudioManager>().Play("Click");
+		settingsMenu.SetActive(false);
+	}
 	private void SetFun()
 	{
 		FindObjectOfType<AudioManager>().Play("Click");
-		Debug.Log("Settings CLICK");
+		settingsMenu.SetActive(true);
 	}
 
 	private void MoneyFun()
