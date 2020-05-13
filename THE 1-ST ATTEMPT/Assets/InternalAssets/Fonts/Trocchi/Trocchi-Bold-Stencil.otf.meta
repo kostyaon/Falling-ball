@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: bf5c890f02490564c87afc077222c637
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Trocchi
+  fontNames:
+  - Trocchi
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b588b17070f91af4e8d2212b5bfbfa75, type: 3}
+  - {fileID: 12800000, guid: 2d9e0016eef4fb94fb761f6642c15ad1, type: 3}
+  - {fileID: 12800000, guid: b29da457e069b7548a84676c306c4e86, type: 3}
+  - {fileID: 12800000, guid: a7cc9b1e3bcd73b4f9c8bb740e799217, type: 3}
+  - {fileID: 12800000, guid: 05c2179e139094b42a60241f4f462242, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

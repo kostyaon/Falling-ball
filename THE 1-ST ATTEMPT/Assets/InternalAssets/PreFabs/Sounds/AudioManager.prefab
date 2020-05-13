@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3542216231096646651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3542216231096646649}
+  - component: {fileID: 3542216231096646648}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3542216231096646649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3542216231096646651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2984804, y: -14.608037, z: -0.986474}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3542216231096646648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3542216231096646651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b728df99a9bebf44dad498a8b3fe65e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 7de6218c02c995a45a1b1002de753a4d, type: 3}
+    name: BeforeStart
+    volume: 0.5
+    pitch: 1.5
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 1b43110106ac3384ba136b25f189c886, type: 3}
+    name: MainTheme
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: f461304b1aa931146b3ceb499ef92d99, type: 3}
+    name: Swipe
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 3311ece667990b44599eded1abbfe428, type: 3}
+    name: Fly
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: f6bf80e31bd57934289c5809fc2e6b0f, type: 3}
+    name: Wind
+    volume: 0.3
+    pitch: 1
+    loop: 1
+    onAwake: 1
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: efb090c51903c61448de3c9506df7024, type: 3}
+    name: SpaceWind
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 27c65010a8c0b6b4b82d5b38e1b10813, type: 3}
+    name: Satelite2
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 1da06e95e822a534fad4421ca408dc89, type: 3}
+    name: Satelite1
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: aabd4cfbfef5e8746ac6d69bcfa32a70, type: 3}
+    name: Missed_basket
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 80701bf0d65f1ae4c92c8a6c0d5bd940, type: 3}
+    name: Loading
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 507121e957a41b84dbe599baaf92d686, type: 3}
+    name: Health
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 3e288fdc08fd658418107f4a19ce846e, type: 3}
+    name: Coin
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 15670fcc770c5c44fb9affeab82208e0, type: 3}
+    name: Click
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: fef91b8ad04f85c4abdbabc8e90ff1cf, type: 3}
+    name: Birds
+    volume: 0.25
+    pitch: 1
+    loop: 1
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 228e03c32a2a89e4c918ecea3daa7faa, type: 3}
+    name: Corn
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: aa15018fc68433a42916a43ef2cb083a, type: 3}
+    name: Boom
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: bf8573be7901842488889d33c10c66e7, type: 3}
+    name: HS
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    onAwake: 0
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: df327bf8afffad04d98d36e284a80aa0, type: 3}
+    name: Space
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    onAwake: 0
