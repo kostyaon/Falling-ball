@@ -76,7 +76,7 @@ public class Scores : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         FindObjectOfType<AudioManager>().Play("Health");
-        cl_1.check = true;
+        Basket.check = true;
         score += 2;
         if (transform.position.y < -1.7f)
         {
