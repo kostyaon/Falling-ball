@@ -28,6 +28,7 @@ public static class SaveSystem
         }
         else
         {
+            PlayerData data = null;
             Debug.LogError("There is no save file in" + path);
             return null;
         }

@@ -16,6 +16,10 @@ public class Player : MonoBehaviour
 	public void Load()
 	{
 		PlayerData data = SaveSystem.LoadPlayerData();
+		if (data == null)
+		{
+			Save();
+		}
 		highScore = data.highScore;
 		money = data.money;
 		skinName = data.skinName;
