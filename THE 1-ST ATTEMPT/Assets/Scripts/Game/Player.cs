@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 	public int highScore = 0;
-	public int money = 0;
+	public int money = 1000;
 	public string skinName = "ball";
 
 	public void Save()
